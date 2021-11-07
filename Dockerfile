@@ -7,6 +7,6 @@ RUN mv apache-tomcat-9.0.39/* /opt/tomcat/.
 RUN apt-get install java
 RUN java -version
 WORKDIR /opt/tomcat/webapps
-COPY helloworld /opt/tomcat/webapps
+COPY *.war /opt/tomcat/webapps
 EXPOSE 8080
 CMD ["/opt/tomcat/bin/catalina.sh", "start"]
