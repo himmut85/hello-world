@@ -11,5 +11,6 @@ RUN apt-get install -y openjdk-11-jre-headless
 RUN java -version
 WORKDIR /opt/tomcat/webapps
 #COPY /target/*.war /opt/tomcat/webapps
+COPY index.jsp /opt(tomcat/webapps
 EXPOSE 8080
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
