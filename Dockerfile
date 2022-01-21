@@ -9,6 +9,7 @@ RUN mv apache-tomcat-9.0.58/* /opt/tomcat/.
 RUN apt-get update -y
 RUN apt-get install -y openjdk-11-jre-headless
 RUN java -version
+RUN java -version
 WORKDIR /opt/tomcat/webapps
 #COPY /target/*.war /opt/tomcat/webapps
 COPY index.jsp /opt(tomcat/webapps
