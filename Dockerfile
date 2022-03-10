@@ -3,9 +3,9 @@ RUN mkdir /opt/tomcat/
 WORKDIR /opt/tomcat
 RUN apt-get update
 RUN apt-get install -y wget
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58.tar.gz
+RUN wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.48/bin/apache-tomcat-9.0.48.tar.gz
 RUN tar xvfz apache*.tar.gz
-RUN mv apache-tomcat-9.0.58/* /opt/tomcat/.
+RUN mv apache-tomcat-9.0.48/* /opt/tomcat/.
 RUN apt-get update -y
 RUN apt-get install -y openjdk-11-jre-headless
 RUN java -version
